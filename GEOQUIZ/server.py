@@ -15,10 +15,40 @@ questions = [
         "answer": "C"
     },
     {
-        "question": "Questão 2. Qual o maior município brasileiro, com 159.534 km^2, com área maior que Portugal?",
+        "question": "Questão 3. Qual o maior município brasileiro, com 159.534 km^2, com área maior que Portugal?",
         "options": ["A) Altamira - PA", "B) São Paulo - SP", "C) Bom Jesus da Lapa - BA", "D) Maraã - AM"],
         "answer": "A"
-    }
+
+    },
+    {
+
+        "question": "Questão 4. Qual o segundo menor país do mundo?",
+        "options": ["A) Mônaco", "B) San Marino", "C) Liechtenstein", "D) Nauru"],
+        "answer": "D"
+    },
+
+    {
+
+        "question": "Questão 5. Qual a cidade com maior número de francófonos?",
+        "options": ["A) Marseille", "B) Kinshasa", "C) Paris", "D) Quebec"],
+        "answer": "B"
+    },
+
+    {
+
+        "question": "Questão 6. Em qual país está cituado a maior montanha fora da cordilheira dos Himalaias?",
+        "options": ["A) Denali - Estados Unidos", "B) Ojos del Salado - Chile", "C) Aconcágua - Argentina", "D) Mont Blanc - França / Itália"],
+        "answer": "C"
+    },
+
+    {
+
+        "question": "Questão 7. Qual país possui o maior número de fuso horários?",
+        "options": ["A) França", "B) Estados Unidos", "C) Rússia", "D) China"],
+        "answer": "A"
+    },
+    
+
 ]
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -56,7 +86,7 @@ for i, q in enumerate(questions):
 
     result += f"Q{i+1} (resposta: {user_answer} | correta: {correct_answer})\n"
 
-result += f"\nTotal de acertos: {correct}/3\n"
+result += f"\nTotal de acertos: {correct}/7\n"
 
 conn.send(result.encode())
 
